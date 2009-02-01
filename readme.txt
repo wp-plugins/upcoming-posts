@@ -1,8 +1,8 @@
 === Upcoming Posts ===
 Contributors: MrLive158
 Visit link: http://mrlive.org/
-Tags: scheduled, post,upcoming,future,draft
-Requires at least: 2.7
+Tags: scheduled, post,upcoming,future,draft,upcoming posts
+Requires at least: 2.6
 Tested up to: 2.7
 Stable tag: 4.3
 
@@ -10,30 +10,22 @@ A nice plugin which creates a widget which shows your scheduled posts or drafts 
 
 == Description ==
 
-It's good to update your blog regularly. But sometimes it's better to let your readers know exactly what and when you will post something. So I develop this plug-in to help who want the readers be more curios about his blog. 
+It is good to update your blog regularly. But sometimes it’s better to let your readers know exactly what and when you will post something. So I develop this plug-in for whom wants the readers be more curious about his blog. 
+
+Features
+# Help you to show cheduled posts or drafts.
+# Configure in the widget: the number of posts; show the excerpt; the time format.
+# Make your own style by editing `ucp.css` and `ucp_widget.php` files.
 
 == Installation ==
 
-It's just like other plug-ins.
-1. Upload `upcoming.php` and `ucp.css` to a folder in `wp-content\plugins` (eg. upcomingplugin)
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Just add Upcoming Posts widget into your sidebar and enjoy!
-
-== Frequently Asked Questions ==
+1. Unzip into your wp-content/plugins directory & active through the ‘Plugins’ menu in Dashboard.
+2. Visit the ‘Widgets’ menu and add it into your sidebar with proper choices.
 
 == Screenshots ==
 
 1. The control widget
 2. An example
 
-== Arbitrary section ==
-
-== A brief Markdown Example ==
-
-Features
-1. Allow you to show your scheduled posts or drafts
-2. You can change the number of posts to show
-3. You can also decide to hide the excerpt below the title or not.
 
 
-`<?php code(); // goes in backticks ?>`
