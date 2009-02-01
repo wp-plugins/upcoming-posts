@@ -9,7 +9,7 @@ Author URI: http://mrlive.org
 */
 function ucp_headaction()
 {
-	echo '<link rel="stylesheet" href="'.PLUGINDIR.'/'.dirname( plugin_basename(__FILE__) ).'/ucp.css" type="text/css" />';
+	echo '<link rel="stylesheet" href="'.get_bloginfo('wpurl').'/'.PLUGINDIR.'/'.dirname( plugin_basename(__FILE__) ).'/ucp.css" type="text/css" />';
 }
 
 function ucp_control_gen($ucp_title, $ucp_num, $ucp_nopost, $ucp_time ,$show_time, $show_cat, $show_excerpt,$just_draft)  /* setup */
