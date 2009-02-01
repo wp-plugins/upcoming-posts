@@ -4,23 +4,23 @@ Visit link: http://mrlive.org/
 Tags: scheduled, post,upcoming,future,draft,upcoming posts
 Requires at least: 2.6
 Tested up to: 2.7
-Stable tag: 4.3
+Stable tag: 1.2
 
 A nice plugin which creates a widget which shows your scheduled posts or drafts with excerpt and more infos.
 
 == Description ==
 
-It is good to update your blog regularly. But sometimes it’s better to let your readers know exactly what and when you will post something. So I develop this plug-in for whom wants the readers be more curious about his blog. 
+It is good to update your blog regularly. But sometimes it's better to let your readers know exactly what and when you will post something. So I develop this plug-in for whom wants the readers be more curious about his blog. 
 
 Features
 # Help you to show cheduled posts or drafts.
 # Configure in the widget: the number of posts; show the excerpt; the time format.
-# Make your own style by editing `ucp.css` and `ucp_widget.php` files.
+# Make your own style by editing 'ucp.css' and 'ucp_widget.php' files.
 
 == Installation ==
 
-1. Unzip into your wp-content/plugins directory & active through the ‘Plugins’ menu in Dashboard.
-2. Visit the ‘Widgets’ menu and add it into your sidebar with proper choices.
+1. Unzip into your wp-content/plugins directory & active through the 'Plugins' menu in Dashboard.
+2. Visit the 'Widgets' menu and add it into your sidebar with proper choices.
 
 == Screenshots ==
 
