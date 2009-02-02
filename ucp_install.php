@@ -12,12 +12,17 @@ function ucp_headaction()
 	echo '<link rel="stylesheet" href="'.get_bloginfo('wpurl').'/'.PLUGINDIR.'/'.dirname( plugin_basename(__FILE__) ).'/ucp.css" type="text/css" />';
 }
 
-function ucp_control_gen($ucp_title, $ucp_num, $ucp_nopost, $ucp_time ,$show_time, $show_cat, $show_excerpt,$just_draft)  /* setup */
+function ucp_control_gen($ucp_title, $ucp_catid, $ucp_num, $ucp_nopost, $ucp_time ,$show_time, $show_cat, $show_excerpt,$just_draft)  /* setup */
 {
 ?>
 <p>
 	<label for="ucp-title"><?php _e('Title:'); ?>
 		<input class="widefat" id="ucp-title" name="ucp-title" type="text" value="<?php echo attribute_escape($ucp_title); ?>"	/>
+	</label>
+</p>
+<p>
+	<label for="ucp-catid"><?php _e('Specific Cat_ID <br/>(leave blank to show all):'); ?>
+		<input class="widefat" id="ucp-catid" name="ucp-catid" type="text" value="<?php echo attribute_escape($ucp_catid); ?>"	/>
 	</label>
 </p>
 <p>
@@ -79,6 +84,7 @@ function ucp_control() {
 	$options = $newoptions = get_option('ucp_content_gen');
 	if ($_POST['ucp-widget-submit']) {
 			$newoptions['ucp-title'] = strip_tags(stripslashes($_POST['ucp-title']));
+			$newoptions['ucp-catid'] = strip_tags(stripslashes($_POST['ucp-catid']));
 			$newoptions['ucp-num'] = strip_tags(stripslashes($_POST['ucp-num']));
 			$newoptions['ucp-nopost'] = strip_tags(stripslashes($_POST['ucp-nopost']));
 			$newoptions['ucp-time'] = strip_tags(stripslashes($_POST['ucp-time']));
@@ -95,6 +101,7 @@ function ucp_control() {
 
 	ucp_control_gen(
 		$options['ucp-title'],
+		$options['ucp-catid'],
 		$options['ucp-num'],
 		$options['ucp-nopost'],
 		$options['ucp-time'],
@@ -112,6 +119,9 @@ function ucp_content_gen($args)  /* show content */
 	$ucp_title =empty($options['ucp-title']) ?
 		__('Upcoming Posts') :
 		$options['ucp-title'];
+	$ucp_catid =empty($options['ucp-catid']) ?
+		__('') :
+		$options['ucp-catid'];
 	$ucp_num =empty($options['ucp-num']) ?
 		__('2') :
 		$options['ucp-num'];

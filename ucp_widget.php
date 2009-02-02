@@ -1,6 +1,6 @@
 <?php
 	if ($just_draft) {$ucp_post_status = draft;}else {$ucp_post_status = future;}
-	$takethem = new WP_Query("post_status=$ucp_post_status&order=ASC&showposts=$ucp_num");
+	$takethem = new WP_Query("cat=$ucp_catid&post_status=$ucp_post_status&order=ASC&showposts=$ucp_num");
 	if ($takethem->have_posts()){ while ($takethem->have_posts()) :$takethem->the_post();	$do_not_duplicate = $post->ID;?>
 			<span id="ucp_content">
 				<ul>
