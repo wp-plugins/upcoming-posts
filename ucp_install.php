@@ -2,7 +2,7 @@
 /*
 Plugin Name: Upcoming Posts
 Plugin URI: http://mrlive.org/2009/01/plugin-dau-tay-upcoming-posts/
-Version: 1.2
+Version: 1.2.1
 Description: Create a widget which shows all of your scheduled posts to notice your readers for coming back intime.
 Author: MrLive
 Author URI: http://mrlive.org
