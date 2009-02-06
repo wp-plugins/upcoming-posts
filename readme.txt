@@ -4,7 +4,7 @@ Visit link: http://mrlive.org/
 Tags: scheduled, post,upcoming,future,draft,upcoming posts,upcoming post
 Requires at least: 2.6
 Tested up to: 2.7
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 
 A nice plugin which creates a widget which shows your scheduled posts or drafts with excerpt and more infos.
 

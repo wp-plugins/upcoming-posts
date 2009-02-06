@@ -141,6 +141,13 @@ function ucp_content_gen($args)  /* show content */
 	echo $after_widget;
 }
 
+function ucp_show($ucp_title, $ucp_catid, $ucp_num, $ucp_nopost, $ucp_time ,$show_time, $show_cat, $show_excerpt,$just_draft) {
+	echo $before_widget ;
+	echo $before_title . $ucp_title . $after_title;
+	include(PLUGINDIR.'/'.dirname( plugin_basename(__FILE__) ).'/ucp_widget.php');
+	echo $after_widget;
+}
+
 function ucp_init() /* register */
 {
 	register_sidebar_widget(__('Upcoming Posts'),'ucp_content_gen');
