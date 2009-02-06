@@ -28,6 +28,23 @@ Features
 
 You can easily find it in "Dashboard\Posts\Categories" area, move the mouse over the category name and you will see something like "categories.php?action=edit&cat_ID=180", that's the point. Another way is to install a plug-in can show all the ID number (I am sure it exists)
 
+= If my themes does not support widget, what can I do? =
+1. The simpliest, widgetize your themes, u can search how to do it on the internet.
+2. Download the ver 1.2.2 and use the function :
+ucp_show(’the title here - it should be blank’,
+‘the id of the specific cat if u want or leave it blank’,
+‘number of posts to show’,
+‘if no post’,
+‘time style’,
+‘if you want to show time’,
+‘if u want to show cat’,
+‘if u want to show excerp’,
+‘if u want to switch to’ )
+
+For example:
+< ?php ucp_show('','','3','No post','d.m.Y','true',
+'true', 'false','false'); ?>
+
 == Screenshots ==
 
 1. The control widget 1.2.1
